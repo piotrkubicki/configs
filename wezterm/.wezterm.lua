@@ -14,8 +14,10 @@ config.initial_rows = 28
 -- or, changing the font size and color scheme.
 if wezterm.target_triple == 'aarch64-apple-darwin' then
 	config.font_size = 14
+	config.command_palette_font_size = 14
 else
 	config.font_size = 12
+	config.command_palette_font_size = 12
 end
 config.color_scheme = 'Argonaut (Gogh)'
 
@@ -77,12 +79,12 @@ config.keys = {
 		action = workspace_switcher.switch_workspace()
 	},
 	{
-		key = 'n',
+		key = ',',
 		mods = 'CTRL|SHIFT',
 		action = act.SwitchWorkspaceRelative(1)
 	},
 	{
-		key = 'p',
+		key = '.',
 		mods = 'CTRL|SHIFT',
 		action = act.SwitchWorkspaceRelative(-1)
 	},
