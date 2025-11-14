@@ -79,12 +79,12 @@ config.keys = {
 		action = workspace_switcher.switch_workspace()
 	},
 	{
-		key = ',',
+		key = '>',
 		mods = 'CTRL|SHIFT',
 		action = act.SwitchWorkspaceRelative(1)
 	},
 	{
-		key = '.',
+		key = '<',
 		mods = 'CTRL|SHIFT',
 		action = act.SwitchWorkspaceRelative(-1)
 	},
