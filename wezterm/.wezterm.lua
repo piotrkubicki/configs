@@ -53,7 +53,7 @@ config.keys = {
 		},
 	},
 	{
-		key = 'c',
+		key = 'z',
 		mods = 'CTRL|SHIFT',
 		action = act.PromptInputLine {
 			description = wezterm.format {
@@ -87,6 +87,16 @@ config.keys = {
 		key = '<',
 		mods = 'CTRL|SHIFT',
 		action = act.SwitchWorkspaceRelative(-1)
+	},
+	{
+		key = ',',
+		mods = 'CTRL',
+		action = act.AdjustPaneSize { 'Left', 5 },
+	},
+	{
+		key = '.',
+		mods = 'CTRL',
+		action = act.AdjustPaneSize { 'Right', 5 },
 	},
 }
 
