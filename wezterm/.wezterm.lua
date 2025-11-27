@@ -98,6 +98,17 @@ config.keys = {
 		mods = 'CTRL',
 		action = act.AdjustPaneSize { 'Right', 5 },
 	},
+	-- Vim buffer navigation for ClaudeCode
+	{
+		key = "h",
+		mods = "CTRL",
+		action = wezterm.action.Multiple({
+			wezterm.action.SendKey({ key = "\\", mods = "CTRL" }),
+			wezterm.action.SendKey({ key = "n", mods = "CTRL" }),
+            -- Shortcut of <C-w><C-h>
+			wezterm.action.SendKey({ key = "h", mods = "CTRL" }),
+		}),
+	},
 }
 
 -- Finally, return the configuration to wezterm:

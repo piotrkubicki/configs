@@ -24,8 +24,11 @@ Plug("nvim-telescope/telescope.nvim", {["tag"] = "0.1.8"})
 Plug("sindrets/diffview.nvim")
 Plug("NeogitOrg/neogit")
 Plug("navarasu/onedark.nvim")
+Plug("mbbill/undotree")
 Plug("copilotlsp-nvim/copilot-lsp")
 Plug("zbirenbaum/copilot.lua")
+Plug("folke/snacks.nvim")
+Plug("coder/claudecode.nvim")
 
 vim.call("plug#end")
 
@@ -42,5 +45,7 @@ require "cmp_conf"
 require "telescope_conf"
 require "onedark_conf"
 require "mason_conf"
+require "undotree_conf"
 require "copilot_conf"
 require "neogit_conf"
+require "claudecode_conf"
